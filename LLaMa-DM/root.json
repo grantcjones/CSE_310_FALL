@@ -1,0 +1,49 @@
+{
+    "options": {
+        "odds": [
+            50,
+            50
+        ],
+        "door": {
+            "statement": "You approach a door.",
+            "question": "Would you like to enter?",
+            "options": {
+                "description": {
+                    "statement": "The door is inlaid in a mountain face. It is made of wood and has a golden doorknob. Though covered in dust and cobwebs, they seem to be in pristine condition."
+                },
+                "enter": {
+                    "statement": "You see a dark hallway.",
+                    "question": "Proceed?",
+                    "options": {
+                        "proceed": {
+                            "do": [
+                                [
+                                    "test",
+                                    [
+                                        "preston",
+                                        "jacob"
+                                    ]
+                                ]
+                            ],
+                            "options": {
+                                "odds": [
+                                    20,
+                                    80
+                                ],
+                                "dead": {
+                                    "statement": "You have died.",
+                                    "end": true
+                                },
+                                "live": {
+                                    "statement": "You survived.",
+                                    "end": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "village": {}
+    }
+}

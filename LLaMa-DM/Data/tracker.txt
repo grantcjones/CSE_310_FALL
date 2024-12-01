@@ -1,0 +1,7 @@
+Question: Step into the dungeon entrance?
+Options: proceed, turn back, elaborate
+Answer: I guess
+Result: turn back
+Average: 2.63
+Attempts:3
+Total Tries:3

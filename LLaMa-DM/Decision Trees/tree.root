@@ -1,0 +1,79 @@
+{
+    "options": {
+        "odds": [
+            50,
+            50
+        ],
+        "door": {
+            "statement": "You approach a door.",
+            "question": "Would you like to enter?",
+            "options": {
+                "description": {
+                    "statement": "The door is inlaid in a mountain face. It is made of wood and has a golden doorknob. Though covered in dust and cobwebs, they seem to be in pristine condition."
+                },
+                "enter": {
+                    "statement": "You see a dark hallway.",
+                    "question": "Proceed?",
+                    "options": {
+                        "proceed": {
+                            "do": [
+                                [
+                                    "test",
+                                    [
+                                        "preston",
+                                        "jacob"
+                                    ]
+                                ]
+                            ],
+                            "options": {
+                                "odds": [
+                                    20,
+                                    80
+                                ],
+                                "dead": {
+                                    "statement": "You have died.",
+                                    "repeat": true
+                                },
+                                "live": {
+                                    "statement": "You survived.",
+                                    "repeat": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "village": {
+            "statement": "You approach a village.",
+            "question": "Would you like to proceed?",
+            "options": {
+                "proceed": {
+                    "options": {
+                        "odds": [
+                            50,
+                            50
+                        ],
+                        "talk": {
+                            "statement": "You see Edward and Elise",
+                            "question": "Who would you like to speak to?",
+                            "options": {
+                                "elise": {
+                                    "statement": "You spoke to Elise",
+                                    "repeat": true
+                                },
+                                "edward": {
+                                    "statement": "You spoke to Edward",
+                                    "repeat": true
+                                }
+                            }
+                        },
+                        "trip": {
+                            "statement": "You tripped and fell."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
